@@ -1,0 +1,10 @@
+packages/cli/node_modules
+packages/cli/dist
+
+packages/local-api/node_modules
+packages/local-api/dist
+
+
+packages/local-client/dist
+packages/local-client/node_modules
+
