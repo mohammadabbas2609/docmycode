@@ -24,7 +24,7 @@ export const serveCommand = new Command()
         chalk.blue(
           `Opened ${filename}. Navigate to ${chalk.magenta(
             `http://localhost:${options.port}`
-          )} to edit the content`
+          )} to edit the content.`
         )
       );
     } catch (error: any) {
