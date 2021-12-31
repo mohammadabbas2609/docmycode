@@ -12,9 +12,9 @@ export const serve = (
   const app = express();
 
   app.use(express.json());
+  app.use(createCellsRouter(fileName, dir));
 
   if (useProxy) {
-    app.use(createCellsRouter(fileName, dir));
     app.use(
       createProxyMiddleware({
         target: "http://localhost:3001",
@@ -26,8 +26,6 @@ export const serve = (
     const packagePath = require.resolve(
       "@docmycode/local-client/build/index.html"
     );
-
-    console.log(packagePath);
 
     app.use(express.static(path.dirname(packagePath)));
   }
