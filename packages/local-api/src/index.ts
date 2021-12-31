@@ -17,7 +17,7 @@ export const serve = (
     app.use(createCellsRouter(fileName, dir));
     app.use(
       createProxyMiddleware({
-        target: "http://localhost:3000",
+        target: "http://localhost:3001",
         ws: true,
         logLevel: "silent",
       })
@@ -26,6 +26,9 @@ export const serve = (
     const packagePath = require.resolve(
       "@docmycode/local-client/build/index.html"
     );
+
+    console.log(packagePath);
+
     app.use(express.static(path.dirname(packagePath)));
   }
 
