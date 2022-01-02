@@ -42,5 +42,5 @@ docmycode serve -p [PORT] || docmycode serve --port [PORT]
 * Commander: For handling CLI
 * lerna: For managing multiple packages
 
-## Technical Aspects
-> Docmycode is lightweight CLI tool for documenting code.It make use of esbuild-wasm to bundle the users code as fast as possible in the browser,User can create dynamic      documentation using this tool.All the packages that are imported from NPM is cached to provide essential speed and performant experience.Also all the data is persisted locally on users hard drive so it could be shared with others.Apart from code it also provide markdown editor for documenting the code
+## Under The Hood
+> Docmycode is lightweight CLI tool for documenting code.It make use of esbuild-wasm to bundle the users code as fast as possible in the browser,User can create dynamic      documentation using this tool.All the packages that are imported from NPM is cached to provide essential speed and performant experience.Also all the data is persisted locally on users hard drive so it could be shared with others.Apart from code it also provide markdown editor for documenting the code.
