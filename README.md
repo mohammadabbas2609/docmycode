@@ -1,5 +1,6 @@
 # docmycode
 > [CLI Tool for Code Documentation](https://www.npmjs.com/package/docmycode)
+> [Tutorial](https://vimeo.com/661697363)
 ---
 ## Prerequesites
 * NodeJS on local machine
