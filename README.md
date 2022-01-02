@@ -1,5 +1,5 @@
 # docmycode
-> [Documentation Tool for Code](https://www.npmjs.com/package/docmycode)
+> [CLI Tool for Code Documentation](https://www.npmjs.com/package/docmycode)
 ---
 ## Prerequesites
 * NodeJS on local machine
@@ -27,3 +27,20 @@ docmycode serve -p [PORT] || docmycode serve --port [PORT]
 * Custom Function view() is given to display the result directly in window
 * All the changes are persisted in the file doc.js [By default it can be changed]
 
+## Tech Stack
+* ReactJS: For UI
+* Bulma CSS: For Styling
+* Redux: For State Management
+* Immer: For manupulating State
+* Typescript: For type Safety
+* MonacoEditor: For Code editor in Browser
+* MD-Editor: For Markdown Editor
+* Prettier: For code fomatting in editor
+* esbuild-wasm: For code transpiling in Browser
+* localforage: For handling indexedDB browser database
+* express: For creating server
+* Commander: For handling CLI
+* lerna: For managing multiple packages
+
+## Technical Aspects
+> Docmycode is lightweight CLI tool for documenting code.It make use of esbuild-wasm to bundle the users code as fast as possible in the browser,User can create dynamic      documentation using this tool.All the packages that are imported from NPM is cached to provide essential speed and performant experience.Also all the data is persisted locally on users hard drive so it could be shared with others.Apart from code it also provide markdown editor for documenting the code
